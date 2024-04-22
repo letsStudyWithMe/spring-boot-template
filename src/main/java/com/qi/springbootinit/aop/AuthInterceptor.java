@@ -1,7 +1,6 @@
 package com.qi.springbootinit.aop;
 
 import com.qi.springbootinit.exception.BusinessException;
-import com.qi.springbootinit.service.UserService;
 import com.qi.springbootinit.annotation.AuthCheck;
 import com.qi.springbootinit.common.ErrorCode;
 import com.qi.springbootinit.model.entity.User;
@@ -9,6 +8,8 @@ import com.qi.springbootinit.model.enums.UserRoleEnum;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+
+import com.qi.springbootinit.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
